@@ -1,8 +1,25 @@
 aid: mynd
+accessModel:
+  pricing: unknown
+  onboarding: unknown
+  trial: false
+  try_now: false
+  public: false
+  label: Unknown
+  confidence: low
+  source: []
+  generated: '2026-07-22'
+  method: derived
+image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/icons/mynd.png
 name: Mynd
-description: Mynd is a company surfaced as a portfolio company of canaan-partners, lightspeed-venture-partners,
-  qed-investors and added to the API Evangelist network as a stub for enrichment. This profile is a lead
-  awaiting the enrichment pipeline.
+description: Mynd is a tech-enabled property management and real estate investing company offering
+  full-service management for single-family rental (SFR) homes. It manages more than 20,000 homes
+  across 40-plus U.S. markets, handling tenant screening, leasing, rent collection, maintenance, and
+  portfolio management for individual and institutional investors, and provides a proprietary Investor
+  Portal for real-time portfolio visibility. Mynd is owned by Roofstock and integrates with partner
+  platforms such as Stessa. As of this enrichment pass Mynd publishes no public developer API, API
+  documentation, developer portal, or /.well-known discovery surface; this profile remains a
+  company/portfolio lead with no API artifacts to harvest.
 url: https://raw.githubusercontent.com/api-evangelist/mynd/refs/heads/main/apis.yml
 x-type: company
 x-source: vc-portfolio
@@ -14,9 +31,14 @@ x-tier: stub
 x-tier-reason: portfolio-lead
 specificationVersion: '0.20'
 created: '2026-07-17'
-modified: '2026-07-17'
+modified: '2026-07-20'
 tags:
 - Company
+- Property Management
+- Real Estate
+- Single-Family Rental
+- Proptech
+- Real Estate Investing
 apis: []
 maintainers:
 - FN: Kin Lane
@@ -24,5 +46,12 @@ maintainers:
 - FN: APIs.json
   email: info@apis.io
 common:
+- type: DomainSecurity
+  url: security/mynd-domain-security.yml
 - type: Website
   url: https://www.mynd.co/
+x-enrichment:
+  date: '2026-07-20'
+  status: minimal
+  artifacts_added: 1
+  pass: local-v1
